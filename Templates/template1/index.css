@@ -1,0 +1,78 @@
+.overlay {
+  position:sticky;
+  top: 0;
+  bottom:34%;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #101010;
+}
+
+
+
+.column:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.animation {
+  position: relative;
+  -webkit-animation: backwards;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 5s;
+}
+@-webkit-keyframes run {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+.logo {
+  padding: 70px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.fcontact{
+padding: 50px;
+}
+.socialicon{
+  display:flex;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+.event_container{
+  margin-top: 4rem;
+  height: 29rem;
+  background-color: rgb(43, 42, 42);
+}
+.card_flex{
+  display: flex;
+  gap: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+}
